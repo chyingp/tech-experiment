@@ -11,4 +11,6 @@ var gen = function*(){
 	console.log(r2);
 };
 
-co(gen);
+co(gen).then(function(){
+	console.log('执行完成');
+});
