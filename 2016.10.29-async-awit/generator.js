@@ -25,7 +25,3 @@ function *read (){
 
 run(read);
 
-// readFile('./extra/hello.txt', 'utf8')(function(err, data){
-// 	console.log(data);
-// });
-

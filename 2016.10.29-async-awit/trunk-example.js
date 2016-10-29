@@ -5,4 +5,3 @@ var readFile = thunk(fs.readFile);
 readFile('./extra/hello.txt', 'utf8')(function(err, data){
 	console.log(data);
 });
-
