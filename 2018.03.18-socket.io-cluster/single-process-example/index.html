@@ -25,10 +25,8 @@
     });
     
     socket.on('process_info', function (data) {
-      // 当 socket.io 服务端运行在cluster模式下，前后两次打印出不同的信息。
-      // 举例：
-      // 第一次run：client: got svr process info: {"pid":57551}
-      // 第二次run：client: got svr process info: {"pid":57558}
+      // 前后两次打印消息一致，比如
+      // client: got svr process info: {"pid":57387}
       console.log('client: got svr process info: %s', JSON.stringify(data));
     });
   }
