@@ -14,7 +14,7 @@ if (cluster.isMaster) {
     console.log(`worker ${worker.process.pid} died`);
   });
 } else {
-  require('./app');
+  require('./server');
   console.log(`Worker ${process.pid} started`);
 }
 
